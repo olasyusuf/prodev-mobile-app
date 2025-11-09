@@ -1,6 +1,5 @@
 import { AntDesign, EvilIcons, Feather, FontAwesome, Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
-import '@/styles/global.css';
 
 const HomeRootLayout = () => {
   return (
@@ -29,7 +28,6 @@ const HomeRootLayout = () => {
       }} />
         <Tabs.Screen name="profile" options={{
         title: 'Profile',
-        headerShown: true,
         tabBarIcon: ({ color }) => <FontAwesome name="user-o" size={24} color="black" />
       }} />
     </Tabs>
