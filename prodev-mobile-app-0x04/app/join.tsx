@@ -1,9 +1,10 @@
 import { Text, TextInput, View, TouchableOpacity, Image } from "react-native";
 import { styles } from "@/styles";
+import { styles as joinstyles } from "@/styles/_joinstyle";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
 
-export default function Index() {
+export default function Join() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
@@ -20,14 +21,14 @@ export default function Index() {
           Enter your details to create a new account.
         </Text>
 
-        <View style={styles.formGroup}>
+        <View style={joinstyles.formGroup}>
           <View>
             <Text style={styles.placeholderText}>Email</Text>
             <TextInput keyboardType="email-address" style={styles.inputField} />
           </View>
           <View style={{ marginTop: 20 }}>
             <Text style={styles.placeholderText}>Password</Text>
-            <View style={styles.passwordGroup}>
+            <View style={styles .passwordGroup}>
               <TextInput style={{ flex: 1 }} />
             </View>
           </View>
